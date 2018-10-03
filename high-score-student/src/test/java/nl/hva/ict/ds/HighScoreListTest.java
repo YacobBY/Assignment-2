@@ -23,7 +23,7 @@ public class HighScoreListTest {
     @Before
     public void setup() {
         // Here you should select your implementation to be tested.
-        highScores = new DummyHighScores();
+        highScores = new SelectionSort();
 //        highScores = new InsertionSortHighScores();
 //        highScores = new BucketSortHighScores();
 //        highScores = new PriorityQueueHighScores();
@@ -44,6 +44,7 @@ public class HighScoreListTest {
         assertEquals(0, highScores.getHighScores(0).size());
     }
 
+    //*ThanPresent
     @Test
     public void noMoreHighScoresCanBeGivenThenPresent() {
         highScores.add(nearlyHeadlessNick);
@@ -71,7 +72,8 @@ public class HighScoreListTest {
     public void harryBeatsDumbledore() {
         highScores.add(dumbledore);
         Player harry = new Player("Harry", "Potter", dumbledore.getHighScore() + 1);
-
+        //FIX THIS NON OFFICIAL HIGHSCORES.ADD
+       // highScores.add(harry);
         assertEquals(harry, highScores.getHighScores(1).get(0));
     }
 
