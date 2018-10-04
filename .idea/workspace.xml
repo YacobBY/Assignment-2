@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="49f17562-e916-4d31-9573-f85a6572b3c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/high-score-student/src/test/java/nl/hva/ict/ds/HighScoreListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/high-score-student/src/test/java/nl/hva/ict/ds/HighScoreListTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/high-score-student/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +15,7 @@
     <session id="-120868385">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
@@ -35,23 +34,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1854" />
+          <entry key="java" value="1985" />
+          <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1854" />
+          <entry key="JAVA" value="1985" />
+          <entry key="PLAIN_TEXT" value="18" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/high-score-student/src/test/java/nl/hva/ict/ds/HighScoreListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="75" column="30" lean-forward="true" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+            <state relative-caret-position="213">
+              <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -78,14 +79,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="304">
+              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1538641793937" expanded="true" signature="962:997" ph="..." />
+                <marker date="1538642519358" expanded="true" signature="1114:1149" ph="..." />
               </folding>
             </state>
           </provider>
@@ -257,7 +258,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538642066312" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538642805628" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -383,12 +384,17 @@
       <option name="presentableId" value="Default" />
       <updated>1538560145091</updated>
     </task>
+    <task id="LOCAL-00001" summary="Selectionsort done">
+      <created>1538642104923</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538642104923</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HighScoreListTest_harryBeatsDumbledore - 2018.10.04 at 09h 43m 33s.xml">
-      <configuration name="HighScoreListTest.harryBeatsDumbledore" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HighScoreListTest_harryBeatsDumbledore - 2018.10.04 at 09h 44m 21s.xml">
       <configuration name="HighScoreListTest.harryBeatsDumbledore" configurationId="JUnit" />
     </history-entry>
@@ -416,10 +422,12 @@
     <history-entry file="HighScoreListTest_harryBeatsDumbledore - 2018.10.04 at 10h 33m 51s.xml">
       <configuration name="HighScoreListTest.harryBeatsDumbledore" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="HighScoreListTest_harryBeatsDumbledore - 2018.10.04 at 10h 42m 06s.xml">
+      <configuration name="HighScoreListTest.harryBeatsDumbledore" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18283582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -430,7 +438,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49520257" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49520257" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49520257" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -452,26 +460,24 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Selectionsort done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Selectionsort done" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSort.java</url>
-          <line>22</line>
+          <line>24</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSort.java</url>
-          <line>23</line>
+          <line>27</line>
           <properties />
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSort.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/high-score-student/src/test/java/nl/hva/ict/ds/HighScoreListTest.java</url>
@@ -487,31 +493,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSort.java</url>
-          <line>33</line>
+          <line>37</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSort.java</url>
-          <line>27</line>
+          <line>31</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSort.java</url>
-          <line>24</line>
+          <line>28</line>
           <properties />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSort.java</url>
-          <line>25</line>
+          <line>29</line>
           <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSort.java</url>
-          <line>26</line>
+          <line>30</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
@@ -674,21 +680,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/high-score-student/src/test/java/nl/hva/ict/ds/HighScoreListTest.java">
+    <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="75" column="30" lean-forward="true" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+        <state relative-caret-position="304">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1538642519358" expanded="true" signature="1114:1149" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSort.java">
+    <entry file="file://$PROJECT_DIR$/high-score-student/src/test/java/nl/hva/ict/ds/HighScoreListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1538641793937" expanded="true" signature="962:997" ph="..." />
-          </folding>
+        <state relative-caret-position="213">
+          <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
         </state>
       </provider>
     </entry>
