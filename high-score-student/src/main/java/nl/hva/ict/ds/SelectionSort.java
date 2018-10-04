@@ -4,6 +4,7 @@ package nl.hva.ict.ds;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.*;
 
 public class SelectionSort implements HighScoreList {
     private List<Player> players = new ArrayList<>();
@@ -15,19 +16,21 @@ public class SelectionSort implements HighScoreList {
         int i = 0;
         System.out.println(players.size());
 
-        for (int j = 0; j < players.size(); j++) {
+        for (int j = 0; j < players.size()-1; j++) {
             {
-                if (i <= (players.size()-1)){return;}
+                if (i == (players.size()-1)){return;}
                 //Als je niet bij het einde van de lijst bent **EN** de huidige highscore groter is dan die van de volgende player
-                if ( (players.get(i).getHighScore() > players.get(i + 1).getHighScore())) {
-                    while (players.get(i).getHighScore() > players.get(i + 1).getHighScore()) {
+                if ( (players.get(i).getHighScore() < players.get(i + 1).getHighScore())) {
+                    while (i < players.size()-1 && players.get(i).getHighScore() < players.get(i + 1).getHighScore()) {
                         i++;
                     }
                     //maakt kopie van volgende player
-                    Player temp = players.get(i + 1);
-                    //vervangt volgende player in lijst met huidige player en kopiert volgende over huidige heen
-                    players.set(i + 1, players.get(i));
-                    players.set(i, temp);
+//                    Player temp = players.get(i + 1);
+//                    //vervangt volgende player in lijst met huidige player en kopiert volgende over huidige heen
+//                    players.set(i + 1, players.get(j));
+//                    players.set(i, temp);
+                    Collections.swap(players, j, i);
+                    j++;
                     i = j;
                 }
             }

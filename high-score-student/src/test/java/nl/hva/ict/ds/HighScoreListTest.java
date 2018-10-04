@@ -72,9 +72,9 @@ public class HighScoreListTest {
     public void harryBeatsDumbledore() {
         highScores.add(dumbledore);
         Player harry = new Player("Harry", "Potter", dumbledore.getHighScore() + 1);
-        //FIX THIS NON OFFICIAL HIGHSCORES.ADD
-       // highScores.add(harry);
-        assertEquals(harry, highScores.getHighScores(1).get(0));
+        //FIX THIS NON OFFICIAL HIGHSCORES.ADD AND FIX ASSERTEQUALS BY ADDING GETHIGHSCORE AT THE END
+        highScores.add(harry);
+        assertEquals(harry.getHighScore(), highScores.getHighScores(1).get(0).getHighScore());
     }
 
     // Extra unit tests go here
