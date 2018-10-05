@@ -3,34 +3,42 @@
 package nl.hva.ict.ds;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-public class SelectionSortHighScores implements HighScoreList {
+public class OudeKlasseNietGebruiken implements HighScoreList {
     private List<Player> players = new ArrayList<>();
-
 
     @Override
     public void add(Player player) {
-
         players.add(player);
-        if (players.size() <= 1) {
-            return;
-        }
-        for (int i = 0; i < players.size(); i++) {
-            int loopIndex = i;
-            int holderIndex = i;
-            while (loopIndex <= players.size()) {
-                if (players.get(holderIndex).getHighScore() < players.get(loopIndex + 1).getHighScore()) {
-                    holderIndex = loopIndex;
-                }
-                //verhoog de huidige loop index met 1 zodat de while de volgende index checkt
-                loopIndex++;
-            }
-            Player temp = players.get(holderIndex);
-            players.set(holderIndex, players.get(i));
-            players.set(i, temp);
-        }
 
+        int i = 0;
+        System.out.println(players.size());
+
+        for (int j = 0; j < players.size() - 1; j++) {
+            {
+                if (i == (players.size() - 1)) {
+                    return;
+                }
+                //Als player highscore kleiner is dan de volgende highscore
+                if ((players.get(i).getHighScore() < players.get(i + 1).getHighScore())) {
+                    //Als je niet bij het einde van de lijst bent **EN** de volgende highscore kleiner is dan de highscore erna
+                    i++;
+                    while (i < players.size() - 1 && players.get(i).getHighScore() < players.get(i + 1).getHighScore()) {
+                        i++;
+                    }
+                    //maakt kopie van volgende player
+//                    Player temp = players.get(i + 1);
+//                    //vervangt volgende player in lijst met huidige player en kopiert volgende over huidige heen
+//                    players.set(i + 1, players.get(j));
+//                    players.set(i, temp);
+                    Collections.swap(players, j, i);
+                    j++;
+                    i = j;
+                }
+            }
+        }
     }
 
     @Override

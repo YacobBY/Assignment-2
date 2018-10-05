@@ -27,7 +27,7 @@ public interface HighScoreList {
      * Finds players based on their first and last name. At least one of the parameters must have a value other
      * then null or an empty String, {@see String#isEmpty()} for a definition of an empty String.
      * Players match the search values if their names start with the parameters.
-     * @param firstName the firstname of the players must start with or be equal to this value, can be null or empty if
+     * @param firstName the fistname of the players must start with or be equal to this value, can be null or empty if
      *                 lastName is not null or empty.
      * @param lastName the lastname of the playersmust start with or be equal to this value, can be null or empty if
      *                 firstName is not null or empty

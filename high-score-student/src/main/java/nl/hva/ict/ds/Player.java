@@ -1,5 +1,7 @@
 package nl.hva.ict.ds;
 
+import java.util.Comparator;
+
 /**
  * Player keeps track of the name and the highscore for a player.
  * Once created the name can't be changed. The best score for this player
@@ -31,4 +33,8 @@ public class Player {
     public void setHighScore(long highScore) {
         this.highScore = highScore;
     }
+
+
 }
+
+
