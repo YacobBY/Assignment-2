@@ -16,12 +16,13 @@ public class SelectionSortHighScores implements HighScoreList {
         if (players.size() <= 1) {
             return;
         }
-        for (int i = 0; i < players.size(); i++) {
+        for (int i = 0; i < players.size()-1; i++) {
             int loopIndex = i;
             int holderIndex = i;
-            while (loopIndex <= players.size()) {
-                if (players.get(holderIndex).getHighScore() < players.get(loopIndex + 1).getHighScore()) {
-                    holderIndex = loopIndex;
+            while ((loopIndex) < players.size()-1) {
+                if (players.get(holderIndex).getHighScore() < players.get(loopIndex+1).getHighScore()) {
+                    holderIndex = loopIndex+1;
+
                 }
                 //verhoog de huidige loop index met 1 zodat de while de volgende index checkt
                 loopIndex++;

@@ -23,7 +23,7 @@ public class HighScoreListTest {
     @Before
     public void setup() {
         // Here you should select your implementation to be tested.
-        highScores = new OudeKlasseNietGebruiken();
+        highScores = new SelectionSortHighScores();
 //        highScores = new InsertionSortHighScores();
 //        highScores = new BucketSortHighScores();
 //        highScores = new PriorityQueueHighScores();
@@ -81,5 +81,17 @@ public class HighScoreListTest {
 
     private long getHighScore() {
         return randomizer.nextInt(MAX_HIGH_SCORE);
+    }
+
+
+    @Test
+    public void getHighestScore() {
+        highScores.add(dumbledore);
+        highScores.add(new Player("aaa", "xxxxx", dumbledore.getHighScore()+2));
+        highScores.add(new Player("bbbb", "wwww", dumbledore.getHighScore()+3));
+        Player harry = new Player("Harry", "Potter", dumbledore.getHighScore() + 30);
+        highScores.add(harry);
+
+        assertEquals(harry.getHighScore(), highScores.getHighScores(1).get(0).getHighScore());
     }
 }
