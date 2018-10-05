@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class SelectionSort implements HighScoreList {
+public class SelectionSortHighScores implements HighScoreList {
     private List<Player> players = new ArrayList<>();
 
     @Override
