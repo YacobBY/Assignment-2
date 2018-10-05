@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7887d566-89a9-498a-8b8e-7bc61b184ece" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSortHighScores.java" beforeDir="false" afterPath="$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSortHighScores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/BucketSortHighScores.java" beforeDir="false" afterPath="$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/BucketSortHighScores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/high-score-student/src/test/java/nl/hva/ict/ds/HighScoreListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/high-score-student/src/test/java/nl/hva/ict/ds/HighScoreListTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/high-score-student/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,67 +23,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BucketSortHighScores.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BucketSortHighScores.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/BucketSortHighScores.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OudeKlasseNietGebruiken.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/OudeKlasseNietGebruiken.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SelectionSortHighScores.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSortHighScores.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReflectiveCallable.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParentRunner.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="202" selection-start-line="202" selection-end-line="202" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#712#713#0" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,30 +38,34 @@
       <file leaf-file-name="HighScoreListTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/high-score-student/src/test/java/nl/hva/ict/ds/HighScoreListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
+            <state relative-caret-position="354">
+              <caret line="95" column="5" lean-forward="true" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
-                <element signature="e#2536#2537#0" expanded="true" />
-                <element signature="e#2593#2594#0" expanded="true" />
+                <element signature="e#650#651#0" expanded="true" />
+                <element signature="e#681#682#0" expanded="true" />
+                <element signature="e#747#748#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HighScoreList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/HighScoreList.java">
+      <file leaf-file-name="SelectionSortHighScores.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSortHighScores.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DummyHighScores.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/DummyHighScores.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            <state relative-caret-position="-632">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,8 +89,9 @@
         <option value="$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/Player.java" />
         <option value="$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSort.java" />
         <option value="$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/OudeKlasseNietGebruiken.java" />
-        <option value="$PROJECT_DIR$/high-score-student/src/test/java/nl/hva/ict/ds/HighScoreListTest.java" />
         <option value="$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSortHighScores.java" />
+        <option value="$PROJECT_DIR$/high-score-student/src/test/java/nl/hva/ict/ds/HighScoreListTest.java" />
+        <option value="$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/BucketSortHighScores.java" />
       </list>
     </option>
   </component>
@@ -217,6 +169,11 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ds" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="assignment-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="high-score-student" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -237,7 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HighScoreListTest">
+  <component name="RunManager" selected="JUnit.HighScoreListTest.whenNoHighScoreIsAskedForNonShouldBeGiven">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -406,11 +363,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HighScoreListTest.whenNoHighScoreIsAskedForNonShouldBeGiven" />
         <item itemvalue="JUnit.HighScoreListTest" />
         <item itemvalue="JUnit.HighScoreListTest.getHighestScore" />
         <item itemvalue="JUnit.HighScoreListTest.harryBeatsDumbledore" />
         <item itemvalue="JUnit.HighScoreListTest.singlePlayerHasHighScore" />
-        <item itemvalue="JUnit.HighScoreListTest.whenNoHighScoreIsAskedForNonShouldBeGiven" />
       </list>
     </recent_temporary>
   </component>
@@ -428,9 +385,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HighScoreListTest_harryBeatsDumbledore - 2018.10.05 at 23h 31m 11s.xml">
-      <configuration name="HighScoreListTest.harryBeatsDumbledore" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HighScoreListTest_harryBeatsDumbledore - 2018.10.05 at 23h 31m 17s.xml">
       <configuration name="HighScoreListTest.harryBeatsDumbledore" configurationId="JUnit" />
     </history-entry>
@@ -458,6 +412,9 @@
     <history-entry file="HighScoreListTest - 2018.10.05 at 23h 45m 59s.xml">
       <configuration name="HighScoreListTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="HighScoreListTest_whenNoHighScoreIsAskedForNonShouldBeGiven - 2018.10.06 at 00h 14m 00s.xml">
+      <configuration name="HighScoreListTest.whenNoHighScoreIsAskedForNonShouldBeGiven" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1721" height="935" extended-state="6" />
@@ -466,7 +423,7 @@
       <window_info anchor="right" id="PlantUML" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32860824" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
@@ -502,20 +459,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/DummyHighScores.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/BucketSortHighScores.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/HighScoreList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -544,37 +487,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/DummyHighScores.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
+        <state relative-caret-position="459">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
             <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/high-score-student/src/test/java/nl/hva/ict/ds/HighScoreListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
-          <folding>
-            <element signature="e#2536#2537#0" expanded="true" />
-            <element signature="e#2593#2594#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="354">
+          <caret line="95" column="5" lean-forward="true" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSortHighScores.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        <state relative-caret-position="-632">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/BucketSortHighScores.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -23,9 +23,9 @@ public class HighScoreListTest {
     @Before
     public void setup() {
         // Here you should select your implementation to be tested.
-        highScores = new SelectionSortHighScores();
+//        highScores = new SelectionSortHighScores();
 //        highScores = new InsertionSortHighScores();
-//        highScores = new BucketSortHighScores();
+        highScores = new BucketSortHighScores();
 //        highScores = new PriorityQueueHighScores();
 
         nearlyHeadlessNick = new Player("Nicholas", "de Mimsy-Porpington", getHighScore() % 200);
@@ -39,7 +39,7 @@ public class HighScoreListTest {
 
     @Test
     public void whenNoHighScoreIsAskedForNonShouldBeGiven() {
-        highScores.add(dumbledore);
+//Removed add of student
 
         assertEquals(0, highScores.getHighScores(0).size());
     }

@@ -1,24 +1,33 @@
 //auteur: Y Ben Youb
 
+
 package nl.hva.ict.ds;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class BucketSortHighScores implements HighScoreList {
     private List<Player> players = new ArrayList<>();
-    private List <List> bucketList = new ArrayList(players);
-
+    private List<List> bucketList = new ArrayList(players);
 
 
     @Override
     public void add(Player player) {
-        players.add(player);
-bucketList.add(players);
-Player henk = new Player("aa", "ss", 222);
-bucketList.get(0).add(henk);
-}
+        //add snel 3 player lists
+        bucketList.add(players);
+        bucketList.add(players);
+        bucketList.add(players);
+
+        if (player.getHighScore() < 5000)
+            bucketList.get(0).add(player);
+
+        else if (player.getHighScore() < 8000)
+            bucketList.get(1).add(player);
+
+        else if (player.getHighScore() < 10000)
+            bucketList.get(2).add(player);
+
+    }
 
     @Override
     public List<Player> getHighScores(int numberOfHighScores) {
