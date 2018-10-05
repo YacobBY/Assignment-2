@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7887d566-89a9-498a-8b8e-7bc61b184ece" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSortHighScores.java" beforeDir="false" afterPath="$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSortHighScores.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/high-score-student/src/test/java/nl/hva/ict/ds/HighScoreListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/high-score-student/src/test/java/nl/hva/ict/ds/HighScoreListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/high-score-student/target/classes/nl/hva/ict/ds/SelectionSort.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/high-score-student/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +43,8 @@
       <file leaf-file-name="SelectionSortHighScores.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSortHighScores.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="235">
+              <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -575,8 +573,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/high-score-student/src/main/java/nl/hva/ict/ds/SelectionSortHighScores.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="235">
+          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
