@@ -39,7 +39,7 @@ public class HighScoreListTest {
 
     @Test
     public void whenNoHighScoreIsAskedForNonShouldBeGiven() {
-//Removed add of student
+        highScores.add(nearlyHeadlessNick);
 
         assertEquals(0, highScores.getHighScores(0).size());
     }
@@ -50,6 +50,7 @@ public class HighScoreListTest {
         highScores.add(nearlyHeadlessNick);
         highScores.add(dumbledore);
 
+        System.out.println(highScores.getHighScores(10).size());
         assertEquals(2, highScores.getHighScores(10).size());
     }
 
@@ -72,8 +73,11 @@ public class HighScoreListTest {
     public void harryBeatsDumbledore() {
         highScores.add(dumbledore);
         Player harry = new Player("Harry", "Potter", dumbledore.getHighScore() + 1);
+        Player harryaa = new Player("aaa", "aaa", dumbledore.getHighScore() -2);
         //FIX THIS NON OFFICIAL HIGHSCORES.ADD AND FIX ASSERTEQUALS BY ADDING GETHIGHSCORE AT THE END
         highScores.add(harry);
+        highScores.add(harryaa);
+        highScores.getHighScores(3);
         assertEquals(harry.getHighScore(), highScores.getHighScores(1).get(0).getHighScore());
     }
 
