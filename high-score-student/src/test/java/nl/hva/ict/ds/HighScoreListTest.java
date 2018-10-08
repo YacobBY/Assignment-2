@@ -23,9 +23,9 @@ public class HighScoreListTest {
     @Before
     public void setup() {
         // Here you should select your implementation to be tested.
-//        highScores = new SelectionSortHighScores();
+        highScores = new SelectionSortHighScores();
 //        highScores = new InsertionSortHighScores();
-        highScores = new BucketSortHighScores();
+//        highScores = new BucketSortHighScores();
 //        highScores = new PriorityQueueHighScores();
 
         nearlyHeadlessNick = new Player("Nicholas", "de Mimsy-Porpington", getHighScore() % 200);
@@ -73,10 +73,10 @@ public class HighScoreListTest {
     public void harryBeatsDumbledore() {
         highScores.add(dumbledore);
         Player harry = new Player("Harry", "Potter", dumbledore.getHighScore() + 1);
-        Player harryaa = new Player("aaa", "aaa", dumbledore.getHighScore() -2);
+
         //FIX THIS NON OFFICIAL HIGHSCORES.ADD AND FIX ASSERTEQUALS BY ADDING GETHIGHSCORE AT THE END
         highScores.add(harry);
-        highScores.add(harryaa);
+
         highScores.getHighScores(3);
         assertEquals(harry.getHighScore(), highScores.getHighScores(1).get(0).getHighScore());
     }
@@ -97,5 +97,16 @@ public class HighScoreListTest {
         highScores.add(harry);
 
         assertEquals(harry.getHighScore(), highScores.getHighScores(1).get(0).getHighScore());
+    }
+    public int a = 1600;
+
+
+    @Test
+    public void manyHighscorestest() {
+        for (int i = 0; i <  a; i++) {
+            highScores.add(new Player("aaa", "xxxxx", getHighScore()*50));
+        }
+
+        assertEquals( a, highScores.getHighScores(a).size());
     }
 }

@@ -41,6 +41,8 @@ public class BucketSortHighScores implements HighScoreList {
         }
 
             bucketList.set(0,selectionSort.selectionSort(bucketList.get(0)));
+
+        System.out.println("END ADD METHOD");
 //            return;
 //        }
 //        if (player.getHighScore() > mBucketMinScore) {
@@ -67,7 +69,7 @@ public class BucketSortHighScores implements HighScoreList {
         }
         //Omdat het uigesloten is dat numberOfHighscores nu nog groter is dan Players kan dit weggelaten worden.
         List<Player> returnHighscores = new ArrayList(returnList.subList(0, numberOfHighScores));
-        System.out.println("ALLE HIGHSCORES OP VOLGORDE");
+        System.out.println("GEVRAAGDE HIGHSCORES");
         for (Player plaay :returnHighscores){
             System.out.println(plaay.getHighScore());
         }

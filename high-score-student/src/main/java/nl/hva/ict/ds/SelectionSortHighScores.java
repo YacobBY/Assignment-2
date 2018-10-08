@@ -13,23 +13,24 @@ public class SelectionSortHighScores implements HighScoreList {
     public void add(Player player) {
 //voeg een player toe aan het einde van de lijst
         players.add(player);
-        selectionSort(players);
+        players = selectionSort(players);
+
     }
     public List<Player> selectionSort(List<Player> players){
         List<Player>  tempList = players;
         //als de lijst slechts een player bevat hoef je niet te sorteren dus ben je klaar
-        if (this.players.size() <= 1) {
+        if (tempList.size() <= 1) {
             return tempList;
         }
         //loopt van begin tot de totale grootte van de lijst
-        for (int i = 0; i < this.players.size()-1; i++) {
+        for (int i = 0; i < tempList.size()-1; i++) {
             //zet de tijdelijke indexen gelijk aan de begin index
             int loopIndex = i;
             int holderIndex = i;
             //zolang de huidige vergelijk plaats kleiner is dan de maximum grootte min een
-            while ((loopIndex) < this.players.size()-1) {
+            while ((loopIndex) < tempList.size()-1) {
                 //vergelijk de tijdelijke index met de volgende index
-                if (this.players.get(holderIndex).getHighScore() < this.players.get(loopIndex+1).getHighScore()) {
+                if (tempList.get(holderIndex).getHighScore() < tempList.get(loopIndex+1).getHighScore()) {
                     //als de tijdelijke index kleiner is dan de volgende index is de volgende index de tijdelijke index
                     holderIndex = loopIndex+1;
                 }
@@ -38,11 +39,11 @@ public class SelectionSortHighScores implements HighScoreList {
             }
             //als er een grotere waarde dan de eerste index is gevonden wordt de grootste waarde verwisseld met de eerste
             if (holderIndex > i){
-                Player temp = this.players.get(holderIndex);
-                this.players.set(holderIndex, this.players.get(i));
-                this.players.set(i, temp);}
+                Player temp = tempList.get(holderIndex);
+                tempList.set(holderIndex, tempList.get(i));
+                tempList.set(i, temp);}
         }
-        tempList = this.players;
+
         return tempList;
     }
 
@@ -53,10 +54,15 @@ public class SelectionSortHighScores implements HighScoreList {
             //print dit uit
             System.out.println("\n**You have demanded " + (numberOfHighScores - players.size()) + " more highscores than availible**");
             //en voer de functie daarna uit met het maximale aantal highscores mogelijk
-            return getHighScores(players.size());
+            return getAllHighScores();
         }
         //Omdat het uigesloten is dat numberOfHighscores nu nog groter is dan Players kan dit weggelaten worden.
         return players.subList(0, numberOfHighScores);
+    }
+
+
+    public List<Player> getAllHighScores() {
+        return getHighScores(players.size());
     }
 
     @Override
