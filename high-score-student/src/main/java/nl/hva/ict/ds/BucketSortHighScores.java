@@ -31,20 +31,27 @@ public class BucketSortHighScores implements HighScoreList {
 //            System.out.println(play.getHighScore());
 //        }
 
-        if (player.getHighScore() > gBucketMinScore) {
+//        if (player.getHighScore() > gBucketMinScore) {
             bucketList.get(0).add(player);
-            bucketList.set(0,selectionSort.selectionSort(bucketList.get(0)));
-            return;
+            List<Player> asdfasdf = selectionSort.selectionSort(bucketList.get(0));
+
+        for (Player plaay :asdfasdf){
+            System.out.println("high print");
+            System.out.println(plaay.getHighScore());
         }
-        if (player.getHighScore() > mBucketMinScore) {
-            bucketList.get(1).add(player);
+
             bucketList.set(0,selectionSort.selectionSort(bucketList.get(0)));
-            return;
-        }
-        {
-            bucketList.get(2).add(player);
-            bucketList.set(0,selectionSort.selectionSort(bucketList.get(0)));
-        }
+//            return;
+//        }
+//        if (player.getHighScore() > mBucketMinScore) {
+//            bucketList.get(1).add(player);
+//            bucketList.set(0,selectionSort.selectionSort(bucketList.get(1)));
+//            return;
+//        }
+//        {
+//            bucketList.get(2).add(player);
+//            bucketList.set(0,selectionSort.selectionSort(bucketList.get(2)));
+//        }
     }
 
     @Override

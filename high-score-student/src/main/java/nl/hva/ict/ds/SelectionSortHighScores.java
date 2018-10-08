@@ -42,7 +42,7 @@ public class SelectionSortHighScores implements HighScoreList {
                 this.players.set(holderIndex, this.players.get(i));
                 this.players.set(i, temp);}
         }
-
+        tempList = this.players;
         return tempList;
     }
 
