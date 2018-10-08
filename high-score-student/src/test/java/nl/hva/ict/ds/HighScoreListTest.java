@@ -23,9 +23,9 @@ public class HighScoreListTest {
     @Before
     public void setup() {
         // Here you should select your implementation to be tested.
-        highScores = new SelectionSortHighScores();
+//        highScores = new SelectionSortHighScores();
 //        highScores = new InsertionSortHighScores();
-//        highScores = new BucketSortHighScores();
+        highScores = new BucketSortHighScores();
 //        highScores = new PriorityQueueHighScores();
 
         nearlyHeadlessNick = new Player("Nicholas", "de Mimsy-Porpington", getHighScore() % 200);
@@ -91,22 +91,32 @@ public class HighScoreListTest {
     @Test
     public void getHighestScore() {
         highScores.add(dumbledore);
-        highScores.add(new Player("aaa", "xxxxx", dumbledore.getHighScore()+2));
-        highScores.add(new Player("bbbb", "wwww", dumbledore.getHighScore()+3));
+        highScores.add(new Player("aaa", "xxxxx", dumbledore.getHighScore() + 2));
+        highScores.add(new Player("bbbb", "wwww", dumbledore.getHighScore() + 3));
         Player harry = new Player("Harry", "Potter", dumbledore.getHighScore() + 30);
         highScores.add(harry);
 
         assertEquals(harry.getHighScore(), highScores.getHighScores(1).get(0).getHighScore());
     }
-    public int a = 1600;
 
+    @Test
+    public void fewHighscoresTest() {
+        int a = 10;
+        for (int i = 0; i < a; i++) {
+            highScores.add(new Player("aaa", "xxxxx", getHighScore() * 50));
+        }
+
+        assertEquals(a, highScores.getHighScores(a).size());
+    }
 
     @Test
     public void manyHighscorestest() {
-        for (int i = 0; i <  a; i++) {
-            highScores.add(new Player("aaa", "xxxxx", getHighScore()*50));
+        int a = 1000;
+        for (int i = 0; i < a; i++) {
+            Player play = new Player("aaa", "xxxxx", getHighScore());
+            highScores.add(play);
         }
 
-        assertEquals( a, highScores.getHighScores(a).size());
+        assertEquals(a, highScores.getHighScores(a).size());
     }
 }
