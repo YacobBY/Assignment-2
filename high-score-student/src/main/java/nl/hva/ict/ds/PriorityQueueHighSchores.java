@@ -6,28 +6,36 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 public class PriorityQueueHighSchores implements HighScoreList {
-
+//Maakt een comparator object aan, lees documentatie van comparator class voor meer uitleg
     Comparator comparator = new PlayerComparator() ;
+    //Maakt een priorityqueue en gebruikt de playerComparator om te sorteren op highscore basis
     PriorityQueue<Player> priorityQueue = new PriorityQueue<>(comparator);
 
     @Override
+    /*Voeg een player toe aan de priority queue. De add methode gebruikt de comparator om uit
+    te vinden waar het in de queue ge add moet worden.*/
     public void add(Player player) {
         priorityQueue.add(player);
-        System.out.println(priorityQueue);
+
     }
 
     @Override
     public List<Player> getHighScores(int numberOfHighScores) {
         //als er meer highscores worden opgevraagd dan er zijn
         if (numberOfHighScores > priorityQueue.size()) {
-            //print dit uit
+            //print hoeveel highscores er teveel zijn opgevraagd
             System.out.println("\n**You have demanded " + (numberOfHighScores - priorityQueue.size()) + " more highscores than availible**");
             //en voer de functie daarna uit met het maximale aantal highscores mogelijk
             return getAllHighScores();
         }
         List<Player> returnList = new ArrayList<>();
+        //Haal alle players op uit de priorityqueue en zet ze in een player List
+        int q = 0;
         for (Player play : priorityQueue){
-            returnList.add(play);
+            //onnodige optimalisatie
+            if (q<=numberOfHighScores){
+                returnList.add(play);}
+            else {break;}
 //            System.out.println(play.getHighScore());
         }
         //Omdat het uigesloten is dat numberOfHighscores nu nog groter is dan Players kan dit weggelaten worden.
@@ -41,36 +49,25 @@ public class PriorityQueueHighSchores implements HighScoreList {
     public List<Player> findPlayer(String firstName, String lastName) throws IllegalArgumentException {
         return null;
     }
-
-
-
-//    @Override
-//    public List<Player> getHighScores(int numberOfHighScores) {
-//        for (Player play : priorityQueue){
-//            System.out.println(play.getHighScore());
-//        }
-//        return null;
-//    }
-//
-//    @Override
-//    public List<Player> findPlayer(String firstName, String lastName) throws IllegalArgumentException {
-//        return null;
-//    }
-
 }
+/*Custom comparator class, deze wordt gebruikt voor de priorityqueue om te beslissen
+of een player grooter of kleiner is dan de volgende. De klasse bepaald dat deze comparison
+op basis van highscore grootte van de player gaat.
+
+Wat belangrijk is, is dat dit een descending queue is. Gewoonlijk komt het kleinste
+nummer eerst en het grootste nummer laatst, maar onze comparator draait dit om.*/
  class PlayerComparator implements Comparator<Player> {
 
     public int compare(Player x, Player y) {
-        // Assume neither string is null. Real code should
-        // probably be more robust
-        // You could also just return x.length() - y.length(),
-        // which would be more efficient.
+        //als de eerdere highscore groter is dan de tweede highscore, doe niks
         if (x.getHighScore() > y.getHighScore()) {
             return -1;
         }
+        //Als de eerdere highscore kleiner is dan de tweede highscore, wissel ze om
         if (x.getHighScore() < y.getHighScore()) {
             return 1;
         }
+        //Als de highscores hetzelfde zijn, doe niks.
         return 0;
     }
 }

@@ -73,8 +73,7 @@ public class HighScoreListTest {
     public void harryBeatsDumbledore() {
         highScores.add(dumbledore);
         Player harry = new Player("Harry", "Potter", dumbledore.getHighScore() + 1);
-
-        //FIX THIS NON OFFICIAL HIGHSCORES.ADD AND FIX ASSERTEQUALS BY ADDING GETHIGHSCORE AT THE END
+        //Toegevoegde regel want harry wordt nooit ge-add dus anders kan er niet vergeleken worden
         highScores.add(harry);
 
         highScores.getHighScores(3);
@@ -87,7 +86,7 @@ public class HighScoreListTest {
         return randomizer.nextInt(MAX_HIGH_SCORE);
     }
 
-
+//Haalt de hoogste testscore op
     @Test
     public void getHighestScore() {
         highScores.add(dumbledore);
@@ -98,25 +97,24 @@ public class HighScoreListTest {
 
         assertEquals(harry.getHighScore(), highScores.getHighScores(1).get(0).getHighScore());
     }
-
+//test een klein aantal highscores
     @Test
     public void fewHighscoresTest() {
         int a = 10;
         for (int i = 0; i < a; i++) {
             highScores.add(new Player("aaa", "xxxxx", getHighScore() * 50));
         }
-
         assertEquals(a, highScores.getHighScores(a).size());
     }
 
     @Test
+    //Test een enorm aantal highscores.
     public void manyHighscorestest() {
-        int a = 1000;
+        int a = 10000000;
         for (int i = 0; i < a; i++) {
             Player play = new Player("aaa", "xxxxx", getHighScore());
             highScores.add(play);
         }
-
         assertEquals(a, highScores.getHighScores(a).size());
     }
 }

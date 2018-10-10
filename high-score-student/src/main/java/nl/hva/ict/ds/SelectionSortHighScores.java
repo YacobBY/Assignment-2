@@ -60,7 +60,6 @@ public class SelectionSortHighScores implements HighScoreList {
         return players.subList(0, numberOfHighScores);
     }
 
-
     public List<Player> getAllHighScores() {
         return getHighScores(players.size());
     }
