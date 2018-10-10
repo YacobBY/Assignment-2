@@ -25,8 +25,8 @@ public class HighScoreListTest {
         // Here you should select your implementation to be tested.
 //        highScores = new SelectionSortHighScores();
 //        highScores = new InsertionSortHighScores();
-        highScores = new BucketSortHighScores();
-//        highScores = new PriorityQueueHighScores();
+//        highScores = new BucketSortHighScores();
+        highScores = new PriorityQueueHighSchores();
 
         nearlyHeadlessNick = new Player("Nicholas", "de Mimsy-Porpington", getHighScore() % 200);
         dumbledore = new Player("Albus", "Dumbledore", nearlyHeadlessNick.getHighScore() * 1000);

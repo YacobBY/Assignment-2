@@ -34,7 +34,6 @@ public class Player {
         this.highScore = highScore;
     }
 
-
 }
 
 

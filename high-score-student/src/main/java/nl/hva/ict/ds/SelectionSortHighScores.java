@@ -83,6 +83,5 @@ public class SelectionSortHighScores implements HighScoreList {
     public List<Player> getPlayers() {
         return players;
 
-
     }
 }
