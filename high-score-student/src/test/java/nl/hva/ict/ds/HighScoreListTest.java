@@ -110,7 +110,7 @@ public class HighScoreListTest {
     @Test
     //Test een enorm aantal highscores.
     public void manyHighscorestest() {
-        int a = 10000000;
+        int a = 8000;
         for (int i = 0; i < a; i++) {
             Player play = new Player("aaa", "xxxxx", getHighScore());
             highScores.add(play);

@@ -10,11 +10,16 @@ public class BucketSortHighScores implements HighScoreList {
     SelectionSortHighScores selectionSort = new SelectionSortHighScores();
     private List<List<Player>> bucketList = new ArrayList<>();
 
-    private int gBucketMinScore = 70000;
-    private int mBucketMinScore = 30000;
+    private int bucket1MinScore = 70000;
+    private int bucket2MinScore = 70000;
+    private int bucket3MinScore = 70000;
+    private int bucket4MinScore = 70000;
+    private int bucket5MinScore = 70000;
 
     public BucketSortHighScores() {
 
+        bucketList.add(new ArrayList<>());
+        bucketList.add(new ArrayList<>());
         bucketList.add(new ArrayList<>());
         bucketList.add(new ArrayList<>());
         bucketList.add(new ArrayList<>());
@@ -23,7 +28,7 @@ public class BucketSortHighScores implements HighScoreList {
     @Override
     public void add(Player player) {
 
-        if (player.getHighScore() > 0) {
+        if (player.getHighScore() > bucket1MinScore) {
             bucketList.get(0).add(player);
             bucketList.set(0, selectionSort.selectionSort(bucketList.get(0)));
 //            printAllBucketHighScores();
@@ -31,17 +36,28 @@ public class BucketSortHighScores implements HighScoreList {
             return;
         }
 
-
-        if (player.getHighScore() > mBucketMinScore) {
+        if (player.getHighScore() > bucket2MinScore) {
             bucketList.get(1).add(player);
             bucketList.set(1, selectionSort.selectionSort(bucketList.get(1)));
 //            printAllBucketHighScores();
             return;
         }
-
-        {
+        if (player.getHighScore() > bucket3MinScore) {
             bucketList.get(2).add(player);
             bucketList.set(2, selectionSort.selectionSort(bucketList.get(2)));
+//            printAllBucketHighScores();
+            return;
+        }
+        if (player.getHighScore() > bucket4MinScore) {
+            bucketList.get(3).add(player);
+            bucketList.set(3, selectionSort.selectionSort(bucketList.get(3)));
+//            printAllBucketHighScores();
+            return;
+        }
+
+        {
+            bucketList.get(4).add(player);
+            bucketList.set(4, selectionSort.selectionSort(bucketList.get(4)));
 //            printAllBucketHighScores();
         }
     }
@@ -67,10 +83,10 @@ public void printAllBucketHighScores (){
         }
         //Omdat het uigesloten is dat numberOfHighscores nu nog groter is dan Players kan dit weggelaten worden.
         List<Player> returnHighscores = new ArrayList(returnList.subList(0, numberOfHighScores));
-        System.out.println("GEVRAAGDE HIGHSCORES");
-        for (Player plaay : returnHighscores) {
-            System.out.println(plaay.getHighScore());
-        }
+//        System.out.println("GEVRAAGDE HIGHSCORES");
+//        for (Player plaay : returnHighscores) {
+//            System.out.println(plaay.getHighScore());
+//        }
         return returnHighscores;
     }
 
@@ -79,7 +95,7 @@ public void printAllBucketHighScores (){
         for (List<Player> playerList : bucketList) {
             for (Player player : playerList) {
                 returnList.add(player);
-                System.out.println(player.getHighScore());
+//                System.out.println(player.getHighScore());
             }
         }
         return returnList;
