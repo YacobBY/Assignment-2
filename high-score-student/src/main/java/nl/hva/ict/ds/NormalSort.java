@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class OudeKlasseNietGebruiken implements HighScoreList {
+public class NormalSort implements HighScoreList {
     private List<Player> players = new ArrayList<>();
 
     @Override

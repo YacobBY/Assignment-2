@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 public class PriorityQueueHighSchores implements HighScoreList {
-//Maakt een comparator object aan, lees documentatie van comparator class voor meer uitleg
+//Maakt een comparator object aan, lees documentatie van de PlayerComparator class onderaan voor meer uitleg.
     Comparator comparator = new PlayerComparator() ;
     //Maakt een priorityqueue en gebruikt de playerComparator om te sorteren op highscore basis
     PriorityQueue<Player> priorityQueue = new PriorityQueue<>(comparator);
@@ -16,7 +16,6 @@ public class PriorityQueueHighSchores implements HighScoreList {
     te vinden waar het in de queue ge add moet worden.*/
     public void add(Player player) {
         priorityQueue.add(player);
-
     }
 
     @Override
@@ -51,13 +50,12 @@ public class PriorityQueueHighSchores implements HighScoreList {
     }
 }
 /*Custom comparator class, deze wordt gebruikt voor de priorityqueue om te beslissen
-of een player grooter of kleiner is dan de volgende. De klasse bepaald dat deze comparison
-op basis van highscore grootte van de player gaat.
+of een player grooter of kleiner is dan de volgende. Dit bepaald hij op basis van de player highscores
 
 Wat belangrijk is, is dat dit een descending queue is. Gewoonlijk komt het kleinste
 nummer eerst en het grootste nummer laatst, maar onze comparator draait dit om.*/
  class PlayerComparator implements Comparator<Player> {
-
+//Wanneer compare wordt gebruikt moeten er twee players worden meegegeven
     public int compare(Player x, Player y) {
         //als de eerdere highscore groter is dan de tweede highscore, doe niks
         if (x.getHighScore() > y.getHighScore()) {

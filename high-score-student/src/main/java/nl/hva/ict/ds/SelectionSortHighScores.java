@@ -43,7 +43,7 @@ public class SelectionSortHighScores implements HighScoreList {
                 tempList.set(holderIndex, tempList.get(i));
                 tempList.set(i, temp);}
         }
-
+        //geef een gesorteede lijst terug.
         return tempList;
     }
 

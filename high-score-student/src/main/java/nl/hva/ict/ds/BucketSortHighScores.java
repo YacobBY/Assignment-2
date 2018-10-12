@@ -9,13 +9,13 @@ import java.util.List;
 public class BucketSortHighScores implements HighScoreList {
     SelectionSortHighScores selectionSort = new SelectionSortHighScores();
     private List<List<Player>> bucketList = new ArrayList<>();
+    //Score waarvanaf de buckets cijfers accepteren.
+    private int bucket1MinScore = 80000;
+    private int bucket2MinScore = 60000;
+    private int bucket3MinScore = 40000;
+    private int bucket4MinScore = 20000;
 
-    private int bucket1MinScore = 70000;
-    private int bucket2MinScore = 70000;
-    private int bucket3MinScore = 70000;
-    private int bucket4MinScore = 70000;
-    private int bucket5MinScore = 70000;
-
+    //Maakt 5 bucketlists aan
     public BucketSortHighScores() {
 
         bucketList.add(new ArrayList<>());
@@ -26,8 +26,10 @@ public class BucketSortHighScores implements HighScoreList {
     }
 
     @Override
+    //Voegt players toe in bijbehordende bucket en voert daarna selectionsort uit op de bucket waarin een player is toegevoegd.
     public void add(Player player) {
-
+//Als score hoger is dan 80.000, voeg de player toe in deze bucket. Voor de andere buckets wordt vergeleken met 60k, 40k en 20k en daarna automatisch in de laatste bucket
+// zodat negatieve scores ook ingevoerd kunnen worden.
         if (player.getHighScore() > bucket1MinScore) {
             bucketList.get(0).add(player);
             bucketList.set(0, selectionSort.selectionSort(bucketList.get(0)));
@@ -61,15 +63,17 @@ public class BucketSortHighScores implements HighScoreList {
 //            printAllBucketHighScores();
         }
     }
-public void printAllBucketHighScores (){
-    List<Player> allPlayersFromBucketList = getAllPlayersFromBucketList(bucketList);
-    System.out.println("PRINT ALL HIGHSCORES IN THE BUCKET");
-    for (Player play : allPlayersFromBucketList) {
-        System.out.println(play.getHighScore());
-    }
-    System.out.println("END PRINT METHOD");
 
-}
+    public void printAllBucketHighScores() {
+        List<Player> allPlayersFromBucketList = getAllPlayersFromBucketList(bucketList);
+        System.out.println("PRINT ALL HIGHSCORES IN THE BUCKET");
+        for (Player play : allPlayersFromBucketList) {
+            System.out.println(play.getHighScore());
+        }
+        System.out.println("END PRINT METHOD");
+
+    }
+
     @Override
     public List<Player> getHighScores(int numberOfHighScores) {
         //maakt list aan om te returnen
@@ -90,10 +94,15 @@ public void printAllBucketHighScores (){
         return returnHighscores;
     }
 
+    //Haalt alle players stuk voor stuk uit elke bucketlist.
     public List<Player> getAllPlayersFromBucketList(List<List<Player>> bucketList) {
+        //Maak een araylist aan waarin alle elementen bij elkaar gevoegd kunnen worden.
         List<Player> returnList = new ArrayList<>();
+        //Voor elke bucket in de bucketlist
         for (List<Player> playerList : bucketList) {
+            //Voor elke player in de bucket
             for (Player player : playerList) {
+                //Voeg de player toe aan de returnlist.
                 returnList.add(player);
 //                System.out.println(player.getHighScore());
             }
